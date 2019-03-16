@@ -2,4 +2,93 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'PT Sans Regular';
+  src: url("../fonts/PTSans-Regular.eot");
+  src: url("../fonts/PTSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Regular.woff") format("woff"), url("../fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url("../fonts/PTSans-Bold.eot");
+  src: url("../fonts/PTSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Bold.woff") format("woff"), url("../fonts/PTSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'PT Sans Regular', sans-serif;
+  color: #ffffff;
+}
+
+.header {
+  background: url("../img/background1.jpg") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 68px;
+}
+
+.navbar__date {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+.title-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65px 65px;
+      grid-template-columns: 65px 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-logo__text {
+  color: #ffffff;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  font-family: 'PT Sans Bold', sans-serif;
+}
+
+.content {
+  text-align: center;
+  padding: 0vh 20vh;
+  padding-top: 10vh;
+}
+
+.content h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "PT Sans Caption";
+  font-size: 7vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
 /*# sourceMappingURL=style.css.map */

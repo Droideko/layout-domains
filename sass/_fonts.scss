@@ -1,0 +1,27 @@
+@font-face {
+   font-family: 'PT Sans Regular';
+   src: url('../fonts/PTSans-Regular.eot');
+   src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/PTSans-Regular.woff') format('woff'),
+   url('../fonts/PTSans-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   }
+
+@font-face {
+   font-family: 'PT Sans Bold';
+   src: url('../fonts/PTSans-Bold.eot');
+   src: url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/PTSans-Bold.woff') format('woff'),
+   url('../fonts/PTSans-Bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@mixin regular {
+   font-family: 'PT Sans Regular', sans-serif;
+}
+
+@mixin bold {
+   font-family: 'PT Sans Bold', sans-serif;
+}
