@@ -34,7 +34,7 @@
 
 .content
    text-align: center
-   padding: 0vh 20vh
+   padding: 0vh 12vh
    padding-top: 10vh
    h1
       margin: 0
@@ -45,8 +45,70 @@
       font-weight: 700
       line-height: 1.1
       letter-spacing: 2px
-     
-  
+
+.header
+   &-search
+      display: grid
+      justify-items: center
+      margin-top: 5vh
+
+.search
+   background-color: $text-color
+   color: $dark
+   width: 720px
+   height: 80px
+   border-radius: 7px
+   &__form
+      height: 80px
+      padding: 10px 20px
+      display: grid
+      grid-template-columns: 2fr 1fr
+      align-items: center    
+   &__input
+      font-size: 24px    
+      width: 100%
+      border: none
+   &__after
+      color: $text-color
+      text-align: center
+      box-sizing: border-box
+      padding-top: 1px      // ОШИБКА
+      height: 45px
+      width: 720px
+      background-color: $dark
+      opacity: .65
+      border-bottom-left-radius: 7px
+      border-bottom-right-radius: 7px
+
+      
+      
+
+      
+
+.button
+   display: inline-block
+   border: none
+   color: #ffffff
+   padding: 13px 27px
+   margin-left: 60px
+   text-decoration: none 
+   background-color: $button
+   font-size: 22px
+   letter-spacing: 1px
+   border-radius: 8px
+   text-align: center
+   outline: none
+   transition: background-color .1s ease
+   +regular
+   &:focus, &:hover
+      text-decoration: none
+      color: #ffffff
+   &:hover
+      background-color: lighten($button, 5%)
+   &:active
+      background-color: darken($button, 10%)
+
+   
 
 
 
