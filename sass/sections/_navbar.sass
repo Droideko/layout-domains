@@ -40,7 +40,7 @@
       margin: 0
       color: $text-color  
       font-family: "PT Sans Caption"
-      font-size: 7vh
+      font-size: 70px
       font-style: normal      
       font-weight: 700
       line-height: 1.1
@@ -50,7 +50,7 @@
    &-search
       display: grid
       justify-items: center
-      margin-top: 5vh
+      margin-top: 7vh
 
 .search
    background-color: $text-color
@@ -58,7 +58,7 @@
    width: 720px
    height: 80px
    border-radius: 7px
-   &__form
+   &__form      
       height: 80px
       padding: 10px 20px
       display: grid
@@ -69,26 +69,36 @@
       width: 100%
       border: none
    &__after
+      display: grid
+      grid-template-columns: 1fr       
       color: $text-color
       text-align: center
+      align-items: center
       box-sizing: border-box
-      padding-top: 1px      // ОШИБКА
       height: 45px
       width: 720px
-      background-color: $dark
-      opacity: .65
+      background-color: rgba($dark, 0.6) 
       border-bottom-left-radius: 7px
       border-bottom-right-radius: 7px
-
-      
-      
-
-      
+   &__text   
+      letter-spacing: 0.5px   
+      p
+         margin: 0
+         padding: 0
+         display: inline
+         color: $text-color     
+      a
+         display: inline
+         color: $text-green
+         &:hover
+            color: lighten($text-green, 5%)
+         &:active
+            color: darken($text-green, 10%)
 
 .button
    display: inline-block
    border: none
-   color: #ffffff
+   color: $text-color
    padding: 13px 27px
    margin-left: 60px
    text-decoration: none 
@@ -108,7 +118,36 @@
    &:active
       background-color: darken($button, 10%)
 
-   
+.create
+   margin-top: 45px
+   display: grid
+   justify-content: center
+   &__button
+      display: inline-block
+      background-color: $text-green
+      padding: 15px 40px
+      text-decoration: none
+      color: $text-color
+      font-size: 24px      
+      border-radius: 8px
+      text-align: center
+      outline: none
+      transition: background-color .1s ease
+      +bold
+      &:focus, &:hover
+         text-decoration: none
+         color: #ffffff
+      &:hover
+         background-color: lighten($text-green, 5%)
+      &:active
+         background-color: darken($text-green, 10%)
+
+.down
+   display: grid
+   justify-items: center
+   margin-top: 15vh
+
+
 
 
 
